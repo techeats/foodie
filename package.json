@@ -12,5 +12,12 @@
   },
   "devDependencies": {
     "lerna": "^3.14.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techeats/foodie.git"
+  },
+  "author": "melitus <asmelitus@gmail.com>",
+	"license": "SEE LICENSE IN <LICENSE>"
 }
+
