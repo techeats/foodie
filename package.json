@@ -1,6 +1,15 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+		"bootstrap": "lerna bootstrap",
+		"clean": "lerna run -- clean",
+		"format": "lerna run -- format",
+		"test": "lerna run test",
+		"clean:build": "lerna exec -- rimraf lib",
+        "release": "lerna publish",
+        "ls": "lerna ls"
+	},
   "devDependencies": {
     "lerna": "^3.14.1"
   }
