@@ -1,0 +1,32 @@
+{
+  "name": "foodie-backend",
+  "version": "1.0.0",
+  "description": "Foodie Backend and Api",
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "RestApi",
+    "Passport"
+  ],
+  "author": "melitus <asmelitus@gmail.com>",
+  "homepage": "https://github.com/techeats/foodie#readme",
+  "license": "ISC",
+  "main": "lib/foodie-backend.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techeats/foodie.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/techeats/foodie/issues"
+  }
+}

@@ -2,8 +2,9 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
+lerna-debug.log
+npm-debug.log
+packages/*/lib
 
 # testing
 /coverage
