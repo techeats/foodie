@@ -1,0 +1,26 @@
+{
+  "name": "foodie-web",
+  "version": "1.0.0",
+  "description": "Foodie frontend code",
+  "author": "melitus <asmelitus@gmail.com>",
+  "homepage": "https://github.com/techeats/foodie#readme",
+  "license": "ISC",
+  "main": "lib/foodie-web.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techeats/foodie.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/techeats/foodie/issues"
+  }
+}
