@@ -1,5 +1,5 @@
-import path from 'path';
-import { createLogger, format, transports } from 'winston';
+const path = require('path');
+const { createLogger, format, transports } = require('winston');
 
 const { colorize, combine, timestamp, label, printf } = format;
 
@@ -10,7 +10,7 @@ const logFormat = printf(info => {
 });
 
 const Log = createLogger({
-  format: combine(label({ label: 'Foodie API' }), timestamp(), logFormat),
+  format: combine(label({ label: 'Foodie Web' }), timestamp(), logFormat),
   transports: [
     new transports.File({ filename: path.join(LOGS_DIR, 'error.log'), level: 'error' }),
     new transports.File({ filename: path.join(LOGS_DIR, 'debug.log'), level: 'info' }),
@@ -20,9 +20,9 @@ const Log = createLogger({
 if (process.env.NODE_ENV !== 'production') {
   Log.add(
     new transports.Console({
-      format: combine(colorize(), label({ label: 'Foodie API' }), timestamp()),
+      format: combine(colorize(), label({ label: 'Foodie Web' }), timestamp()),
     }),
   );
 }
 
-export default Log;
+module.exports = Log;
