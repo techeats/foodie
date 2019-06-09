@@ -1,0 +1,19 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "linterOptions": {
+    "exclude": [
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json",
+      "tslint.json",
+      "lib/*generated.js"
+    ]
+  },
+  "rules": {
+    "quotemark": [true, "single"],
+    "arrow-parens": false
+  },
+  "rulesDirectory": []
+}
