@@ -24,4 +24,12 @@ router.get('/user/profile', (req, res) => res.render('userProfile'));
 
 router.get('/how-it-works', (req, res) => res.render('howItWorks'));
 
+router.get('/about', (req, res) => res.render('about'));
+
+router.get('/food/detail', (req, res) => res.render('foodDetail'));
+
+router.get('/vendor', (req, res) => res.render('vendor'));
+
+router.get('/vendor/detail', (req, res) => res.render('vendorDetail'));
+
 module.exports = router;
