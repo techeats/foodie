@@ -21,7 +21,7 @@
     "start": "node www.js",
     "server": "nodemon www.js",
     "build": "npm run webpack",
-    "serve": "concurrently --kill-others \"npm run server\" \"npm run webpack-watch\" ",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run webpack-watch\" ",
     "test": "jest",
     "test-watch": "jest --watch",
     "test-coverage": "jest --coverage",

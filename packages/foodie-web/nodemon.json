@@ -1,0 +1,15 @@
+{
+  "verbose": true,
+  "ignore": [
+    "*.test.js",
+    "react",
+    "public",
+    "logs"
+  ],
+  "execMap": {
+    "handlebars": "handlebars",
+    "rb": "ruby",
+    "pde": "processing --sketch={{pwd}} --run"
+  },
+  "ext": "js, json, handlebars"
+}
