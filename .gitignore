@@ -5,6 +5,10 @@
 lerna-debug.log
 npm-debug.log
 packages/*/lib
+packages/*/bin
+packages/*/logs
+packages/*/env
+packages/*/node_modules 
 
 # testing
 /coverage
