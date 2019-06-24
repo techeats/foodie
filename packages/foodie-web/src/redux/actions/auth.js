@@ -48,10 +48,26 @@ export function logoutFailure (error) {
 }
 
   // redux async action
+  export function login(data) {
+    return dispatch => {
+      dispatch(loginRequest())
+       doLogin(data)
+        .then(response => {
+          dispatch(loginSuccess( response.data.token));
+          setLocalStorage('foodie', response.data.token);
+          setAuthorizationHeader(response.data.token);
+          dispatch(push('/'));
+        })
+      .catch(err => {
+          dispatch(loginFailure(err.response.data.error));
+      });
+
+
+  // redux async action
   export function signup (data) {
     return dispatch => {
       dispatch(signupRequest())
-        doLogin(data)
+      doRegister(data)
         .then(response => {
           dispatch(signupSuccess( response.data.token));
           setLocalStorage('foodie', response.data.token);
