@@ -19,14 +19,3 @@ export function GetUser(req: Request, res: Response) {
     .catch(error => Failure(res, error, 'error in fetching user'));
 
 }
-
-export function SignUpUser(req: Request, res: Response) {
-
-  UserActions.SignUpUser(req.body)
-    .then(result => {
-      res.cookie(COOKIE_NAME, result.token, COOKIE_OPTIONS);
-      Success(res, result, 'user registered');
-    })
-    .catch(error => Failure(res, error, 'error in registering user'));
-
-}

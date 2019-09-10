@@ -13,3 +13,14 @@ export function Login(req: Request, res: Response) {
     .catch(error => Failure(res, error, 'error in logging in user'));
 
 }
+
+export function SignUpUser(req: Request, res: Response) {
+
+  AuthActions.SignUpUser(req.body)
+    .then(result => {
+      res.cookie(COOKIE_NAME, result.token, COOKIE_OPTIONS);
+      Success(res, result, 'user registered');
+    })
+    .catch(error => Failure(res, error, 'error in registering user'));
+
+}

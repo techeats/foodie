@@ -1,6 +1,8 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint:recommended"],
+  "extends": [
+    "tslint:recommended"
+  ],
   "jsRules": {},
   "linterOptions": {
     "exclude": [
@@ -12,8 +14,13 @@
     ]
   },
   "rules": {
-    "quotemark": [true, "single"],
-    "arrow-parens": false
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "arrow-parens": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false
   },
   "rulesDirectory": []
 }
