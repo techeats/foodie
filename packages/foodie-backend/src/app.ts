@@ -18,7 +18,7 @@ app.use(helmet());
 app.use(cors());
 app.set('trust proxy', 1); // trust first proxy
 
-app.use('/api/v1', [AuthRouter, UserRouter, VendorRouter]);
+app.use('/v1', [AuthRouter, UserRouter, VendorRouter]);
 
 /**
  * TODO
