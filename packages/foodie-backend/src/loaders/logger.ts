@@ -19,6 +19,7 @@ const logFormat = loggerLabel =>
     label({ label: loggerLabel }),
     myFormat
   )
+  
 
 const createLoggerWithLabel = label =>
   createLogger({
