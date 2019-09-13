@@ -1,4 +1,4 @@
-import { DbConnection } from '../../connection';
+import { DbConnection } from '../../loaders/connection';
 import UserRepository from './UserRepository';
 
 const COLLECTION_NAME = 'users';

@@ -2,9 +2,9 @@
 
 import dotenv from 'dotenv';
 import http from 'http';
-import app from './app';
-import { MongoConnect } from './connection';
-import Log from './logger';
+import app from './loaders/express';
+import { MongoConnect } from './loaders/connection';
+import Log from './config/logger';
 
 dotenv.config();
 

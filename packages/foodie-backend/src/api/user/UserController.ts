@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { COOKIE_NAME, COOKIE_OPTIONS } from '../../auth.middleware';
+import { COOKIE_NAME, COOKIE_OPTIONS } from '../../middlewares/auth.middleware';
 import { Failure, Success } from '../ResponseHandlers';
 import * as UserActions from './UserActions';
 

@@ -1,6 +1,6 @@
 import { compare, hash } from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { KEY } from '../../auth.middleware';
+import { KEY } from '../../middlewares/auth.middleware';
 
 const SALT_ROUNDS = 10;
 
