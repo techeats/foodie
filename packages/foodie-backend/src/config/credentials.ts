@@ -22,9 +22,13 @@ const config = {
       rejectUnauthorized: false
     }
   },
-  REDIS_URL:
-    process.env.REDIS_URL ||
-    'redis://redis-17929.c1.us-central1-2.gce.cloud.redislabs.com:17929',
+  /**
+   * Used by winston logger
+   * @TODO Wait for it...
+   */
+  logs: {
+    level: process.env.LOG_LEVEL,
+  },
 
   CLOUDINARY_CONFIG: {
     cloud_name: process.env.CLOUDINARY_NAME || 'sample',
@@ -159,7 +163,5 @@ const config = {
   MAX_LOGIN_ATTEMPTS: 5,
   LOCK_TIME: 2 * 60 * 60 * 1000,
 
-  // Google Analytics
-  GA_TRACKING_ID: ''
 }
 export default config
