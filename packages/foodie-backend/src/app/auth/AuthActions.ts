@@ -1,4 +1,4 @@
-import { validate } from 'joi';
+import { validate } from '@hapi/joi';
 
 import { comparePassword, generateToken, ILogin, encryptPassword } from './AuthData';
 import { LoginSchema } from './AuthSchema';
