@@ -15,4 +15,3 @@ export function GetUser(req: Request, res: Response) {
   UserActions.GetUser(id)
     .then(result => Success(res, result, 'user fetched'))
     .catch(error => Failure(res, error, 'error in fetching user'));
-}
