@@ -28,15 +28,14 @@ const changePassword = (oldPassword, newPassword) =>
 const deleteAccount = () =>
   axios.delete(`${apiPaths}`);
 
-  export {
-    doLogin,
-    doRegister,
-    loginCompletionRequest,
-    logoutRequest,
-    doResetPassword,
-    resendActionationEmail,
-    recoverPassword,
-    changePassword,
-    deleteAccount,
-    };
-  
+export {
+  doLogin,
+  doRegister,
+  loginCompletionRequest,
+  logoutRequest,
+  doResetPassword,
+  resendActionationEmail,
+  recoverPassword,
+  changePassword,
+  deleteAccount,
+};
