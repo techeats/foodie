@@ -1,6 +1,6 @@
 import Joi from '@hapi/joi';
 
-export const RegisterSchema = Joi.object().keys({
+export const UserSchema = Joi.object().keys({
   email: Joi.string()
     .email()
     .trim()
