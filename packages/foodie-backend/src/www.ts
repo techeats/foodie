@@ -2,9 +2,9 @@
 
 import dotenv from 'dotenv';
 import http from 'http';
-import app from './app';
+import app from './loaders/express';
 import { MongoConnect } from './connection';
-import Log from './logger';
+import Log from '../src/loaders/logger';
 
 dotenv.config();
 
@@ -51,3 +51,5 @@ function onListening() {
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+
+export default app
