@@ -3,7 +3,7 @@
 import dotenv from 'dotenv';
 import http from 'http';
 import app from './loaders/express';
-import { MongoConnect } from './loaders/connection';
+import { MongoConnect } from './connection';
 import Log from './config/logger';
 
 dotenv.config();
