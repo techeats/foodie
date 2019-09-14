@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import jwt from 'jsonwebtoken';
+import jwt from '../api/auth/node_modules/jsonwebtoken';
 
 export const KEY = 'withlovefromkansas';
 export const COOKIE_NAME = '_fooeTechie3293';
