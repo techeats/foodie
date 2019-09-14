@@ -27,7 +27,7 @@
     "start": "node ./bin/www.js",
     "server": "nodemon ./bin/www.js",
     "build": "npm run webpack & npm run tsc",
-    "dev": "concurrently --kill-others \"npm run tsc-watch\" \"npm run server\"",
+    "dev": "npm run tsc-watch & npm run server",
     "tsc": "tsc",
     "tsc-watch": "tsc --watch",
     "test": "jest",
